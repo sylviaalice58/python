@@ -232,3 +232,94 @@ if username and password and is_verified:
   print("Login successful")
 else:
   print("Login failed")
+
+# Nested If Statements
+# You can have if statements inside if statements. This is called nested if statements.
+x = 41
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
+# In this example, the inner if statement only runs if the outer condition (x > 10) is true.
+
+
+# Checking multiple conditions with nesting:
+age = 25
+has_license = True
+
+if age >= 18:
+  if has_license:
+    print("You can drive")
+  else:
+    print("You need a license")
+else:
+  print("You are too young to drive")
+
+
+  # You can nest as many levels deep as needed, but keep in mind that too many levels can make code harder to read.
+# Three levels of nesting:
+
+score = 85
+attendance = 90
+submitted = True
+
+if score >= 60:
+  if attendance >= 80:
+    if submitted:
+      print("Pass with good standing")
+    else:
+      print("Pass but missing assignment")
+  else:
+    print("Pass but low attendance")
+else:
+  print("Fail")
+
+
+# Nested If vs Logical Operators
+# Sometimes nested if statements can be simplified using logical operators like and. The choice depends on your logic.
+# This nested if:
+
+temperature = 25
+is_sunny = True
+
+if temperature > 20:
+  if is_sunny:
+    print("Perfect beach weather!")
+
+
+# Could also be written with and:
+
+temperature = 25
+is_sunny = True
+
+if temperature > 20 and is_sunny:
+  print("Perfect beach weather!")
+
+# The pass Statement
+# if statements cannot be empty, but if you for some reason have an if statement with no content, put in the pass statement to avoid getting an error.
+a = 33
+b = 200
+
+if b > a:
+  pass
+# The pass statement is a null operation - nothing happens when it executes. It serves as a placeholder.
+
+# Why Use pass?
+# The pass statement is useful in several situations:
+
+# When you're creating code structure but haven't implemented the logic yet
+# When a statement is required syntactically but no action is needed
+# As a placeholder for future code during development
+# In empty functions or classes that you plan to implement later
+
+
+# During development, you might want to sketch out your program structure before implementing the details. The pass statement allows you to do this without syntax errors.
+age = 16
+
+if age < 18:
+  pass # TODO: Add underage logic later
+else:
+  print("Access granted")
