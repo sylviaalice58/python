@@ -4,7 +4,7 @@ marks = int(input("Enter students marks: "))
 if marks > 0 and marks < 90:
     print("Below avarage")
 elif marks >=30 and marks < 40:
-    print(Average)
+    print("Average")
 elif marks >= 40 and marks < 70:
     print("Above Avarage")
 elif marks >= 70 and marks <= 100:
