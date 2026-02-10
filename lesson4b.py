@@ -35,7 +35,13 @@ for number in range(100 ,150):
 print("______________________________________________________________________") 
  # create a program that prints the multiples of 3 starting from 201 to 250
 for number in range(201, 149, -3):
-   print(number)
+   print(number) 
+
+print("------------------------------------")
+for number in range(201, 149, -1):
+   if number % 3==0:
+    print(number)
+
 
 print("______________________________________________________________________") 
 # Create a python program that prints the leap years between 2000 and 2024

@@ -19,11 +19,19 @@ for county in counties:
 
 print("-------------------------------------------")
 
-# search =str(input("Enter county "))
+search =input("Enter county ")
 
-# for county in counties:
-#     if county( ) == search():
-#         print("the county is found")
+found=False
+
+for county in counties:
+    if county== search:
+        found=True
+        break
+
+if found:
+    print(search," is found")
+else:
+    print(search," is not available")    
 
 
 
