@@ -235,7 +235,7 @@ else:
 
 # Nested If Statements
 # You can have if statements inside if statements. This is called nested if statements.
-x = 41
+x = 6
 
 if x > 10:
   print("Above ten,")
@@ -243,6 +243,8 @@ if x > 10:
     print("and also above 20!")
   else:
     print("but not above 20.")
+else:
+  print("number less than 10")
 # In this example, the inner if statement only runs if the outer condition (x > 10) is true.
 
 
